@@ -1,0 +1,124 @@
+.header-icon{
+    animation-name: 'rotate';
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    
+}
+
+
+@keyframes rotate{
+    0%{
+        transform: rotate(-2deg);
+    }
+
+    50%{
+        transform: rotate(10deg);
+    }
+
+    100%{
+        transform: rotate(-15deg);
+    }
+}
+
+
+
+.header-content-fade-in{
+    animation-name: "fadeIn";
+    display: inline-flex;
+    font-weight:bolder; 
+    font-size: 20px;
+    position: relative;
+    bottom: 12px;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.header-content-fade-out{
+    display: inline-flex;
+    font-weight:bolder; 
+    font-size: 20px;
+    position: relative;
+    bottom: 12px;
+    animation-name: 'fadeOut';
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+        padding-left: 20px;
+    }
+}
+
+@keyframes fadeOut{
+    0%{
+        opacity: 1;
+        padding-left: 20px;
+        
+    }
+
+    100%{
+        
+        opacity: 0;
+        padding-right: 30px;
+    }
+}
+
+.header-content-fade-in a{
+    animation-name: 'seperate';
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+    /*
+    border-top-style: dashed;
+    border-top-width: 3px;
+    border-top-color: black;
+    border-bottom-style: dashed;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+    */
+    cursor: pointer;
+    
+}
+
+@keyframes seperate{
+    0%{
+        
+    }
+    100%{
+        padding-left: 20px;
+    }
+}
+
+.header-content-fade-out a{
+    animation-name: 'compact';
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+    /*
+    border-top-style: dashed;
+    border-top-width: 3px;
+    border-top-color: black;
+    border-bottom-style: dashed;
+    border-bottom-width: 3px;
+    border-bottom-color: black;
+    */
+    pointer-events: none;
+    cursor: default;
+}
+
+@keyframes compact{
+    0%{
+        padding-left: 20px;
+    }
+    100%{
+        padding-right: -30px;
+        
+    }
+}

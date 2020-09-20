@@ -102,7 +102,6 @@ const Home = (props) => {
         <div className="filter">
           <Link to={"/filter"}>
             <button className="filter-button">Discover One!</button>
-            {console.log(KEY)}
           </Link>
         </div>
       </>

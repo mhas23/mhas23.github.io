@@ -33,7 +33,6 @@ class Profile extends React.Component{
               .then((user) => {
                  
                   this.props.history.push('/signin')
-                    console.log("sign out")
               }).catch(error => {
               this.setState({error})
               alert(this.state.error)

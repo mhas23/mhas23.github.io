@@ -68,7 +68,7 @@ class App  extends React.Component{
         return (
           
           
-            <Router>
+            <HashRouter>
             <Header loggedin = {this.state.loggedIn} user = {this.state.userChar}/>
                 
             <div>
@@ -87,7 +87,7 @@ class App  extends React.Component{
                     </Switch>
             </div>
             <Logo />
-            </Router>
+            </HashRouter>
 
 
         )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Redirect, HashRouter} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
 import Home from '../Pages/Home'
 import MovieInfo from '../Pages/MovieInfo'
 //import List from '../Pages/List'
@@ -68,7 +68,7 @@ class App  extends React.Component{
         return (
           
           
-            <HashRouter>
+            <Router>
             <Header loggedin = {this.state.loggedIn} user = {this.state.userChar}/>
                 
             <div>
@@ -87,7 +87,7 @@ class App  extends React.Component{
                     </Switch>
             </div>
             <Logo />
-            </HashRouter>
+            </Router>
 
 
         )

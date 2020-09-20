@@ -181,7 +181,6 @@ function Filter(props) {
       }
     }
 
-    //setList(response.data.results)
     setPage(1)
     
 

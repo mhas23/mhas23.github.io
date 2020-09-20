@@ -35,12 +35,12 @@ class Search extends React.Component {
         <form
           onSubmit={
             this.onTermSubmit
-          } /*style={{margin: "auto", maxWidth:'50%'}} */
+          }
         >
           <span className="input-searchicon">
             <span className="icon">
               <span
-                className="fas fa-search" /*style={{position:'relative', bottom:'30px', left:'10px'}} */
+                className="fas fa-search"
               ></span>
             </span>
 

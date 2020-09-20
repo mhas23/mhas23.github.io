@@ -38,7 +38,6 @@ class SignIn extends React.Component{
           .then((user) => {
               this.setState({...INITIAL_STATE})
               this.props.history.push('/')
-              //window.location.reload()
               alert(`Welcome ${email.substring(0, email.indexOf("@"))} `)
               
 

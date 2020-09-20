@@ -1,3 +1,9 @@
+/*
+* Gets base URL of 
+* The Movie Database API
+*/
+
+
 import axios from 'axios'
 
 const Search = axios.create({

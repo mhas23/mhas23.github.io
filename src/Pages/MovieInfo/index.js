@@ -154,11 +154,7 @@ function MovieInfo({ match, loggedin, user }) {
             <h2 style={{ marginLeft: "10px" }}>({info.data.release_date})</h2>
           </span>
           <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "auto auto auto",
-              marginTop: "10px",
-            }}
+            className="movie-info"
           >
             <h4>Rating: {info.data.vote_average * 10}%</h4>
             <h4>Popularity: {info.data.popularity}</h4>
@@ -172,7 +168,7 @@ function MovieInfo({ match, loggedin, user }) {
             {info.data.overview === "" ? "No info here" : info.data.overview}{" "}
           </p>
         </div>
-        <div style={{display:'flex', flexDirection:'row', marginTop: '69px'}}>
+        <div style={{display:'flex', flexDirection:'row', marginTop: '69px', overflow:'scroll', maxWidth:'100%'}}>
             {info.data.genres.map((index, key) => (
               <div key={key} style={{paddingLeft:'30px', paddingRight:'30px'}}>
               <h5 style={{fontSize:'large'}}>{index.name}</h5>

@@ -104,7 +104,7 @@ render(){
     <>
       
       <div
-        className=" movie-info" /*style={{display:'flex',flexDirection:'column-reverse'}} */
+        className=" movie-info"
       >
         <Link to={`/info/${this.props.id}/${encodeURIComponent(this.props.title)}`}>
           <img src={this.props.image} style={{ width: "100%" }} alt="Movie" />

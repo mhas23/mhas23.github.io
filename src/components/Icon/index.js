@@ -9,7 +9,7 @@ class Icon extends React.Component {
       <>
         
        <Link
-        to={this.props.prop ? "/profile" : '/signin'} /*style={{borderRightWidth: '3px', borderRightColor:'black', borderRightStyle: 'dashed'}}*/
+        to={this.props.prop ? "/profile" : '/signin'}
       >
         {this.props.user !== "" ? <span style={{textAlign:'center', borderRadius: "50%",backgroundColor: 'wheat', width: '50px', display: 'inline-block', height:'50px', position:'absolute', right:'0%'}}><span style={{position: "relative", textAlign:'center' ,top:'14%', fontSize:'200%'}}>{this.props.user}</span></span> :   <i
           className="far fa-user fa-3x"

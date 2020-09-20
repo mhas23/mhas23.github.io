@@ -37,15 +37,6 @@ class Header extends React.Component {
         >
           <Link to="/"> Home</Link>
           <Link to="/favorites">Favorites</Link>
-        
-          {//<Link
-            //to="/list" /*style={{borderLeftWidth: '3px', borderLeftColor:'black', borderLeftStyle: 'dashed'}}*/
-          //>
-            
-            //List
-         // </Link>
-        
-          }
          
         </div>
         <Icon prop = {this.props.loggedin} user={this.props.user}/>

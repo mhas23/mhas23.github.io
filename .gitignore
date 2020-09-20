@@ -19,8 +19,8 @@
 .env.test.local
 .env.production.local
 firebase.json
-.indexes.json
-.rules
+*.indexes.json
+*.rules
 
 npm-debug.log*
 yarn-debug.log*

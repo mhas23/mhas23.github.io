@@ -154,7 +154,7 @@ function MovieInfo({ match, loggedin, user }) {
             <h2 style={{ marginLeft: "10px" }}>({info.data.release_date})</h2>
           </span>
           <div
-            className="movie-info"
+            className="movie-sum"
           >
             <h4>Rating: {info.data.vote_average * 10}%</h4>
             <h4>Popularity: {info.data.popularity}</h4>
